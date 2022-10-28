@@ -22,8 +22,8 @@ SPACESHIP_PROMPT_SEPARATE_LINE=false
 SPACESHIP_CHAR_SYMBOL=❯
 SPACESHIP_CHAR_SUFFIX=' '
 SPACESHIP_GIT_SYMBOL=''
-SPACESHIP_PROMPT_ORDER=(dir git exit_code venv char)
-SPACESHIP_PROMPT_ASYNC=false
+SPACESHIP_PROMPT_ORDER=(dir git venv char)
+SPACESHIP_GIT_ASYNC=false
 
 fpath=("$HOMEBREW/share/zsh/site-functions" $fpath)
 for plugin in $ZDOTDIR/plugins/*; do
