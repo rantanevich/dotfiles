@@ -17,6 +17,14 @@ HISTFILE=$HOME/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_PROMPT_SEPARATE_LINE=false
+SPACESHIP_CHAR_SYMBOL=❯
+SPACESHIP_CHAR_SUFFIX=' '
+SPACESHIP_GIT_SYMBOL=''
+SPACESHIP_PROMPT_ORDER=(dir git exit_code venv char)
+SPACESHIP_PROMPT_ASYNC=false
+
 fpath=("$HOMEBREW/share/zsh/site-functions" $fpath)
 for plugin in $ZDOTDIR/plugins/*; do
     fpath=($plugin $fpath)
@@ -43,4 +51,5 @@ setopt hist_find_no_dups
 
 complete -o nospace -C $HOMEBREW/bin/vault vault
 
+source $HOMEBREW/opt/spaceship/spaceship.zsh
 source $HOMEBREW/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
