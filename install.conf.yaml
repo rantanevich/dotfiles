@@ -9,6 +9,7 @@
     ~/.config/alacritty: {}
     ~/.config/nvim: {}
     ~/.config/zsh: {}
+    ~/.config/git: {}
 
 - clean:
   - ~/
