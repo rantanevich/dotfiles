@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- link:
+    ~/.zshenv: {}
+    ~/.terraformrc: {}
+    ~/.config/alacritty: {}
+    ~/.config/zsh: {}
+
+- clean:
+  - ~/
+  - ~/.config
+
+- create:
+  - ~/.config
+  - ~/.local/bin
+
+- shell:
+  - git submodule update --init --recursive
