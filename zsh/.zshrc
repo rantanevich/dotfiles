@@ -35,6 +35,8 @@ autoload -Uz compinit && compinit
 autoload -U promptinit && promptinit
 
 bindkey -e
+bindkey "\E[1~" beginning-of-line
+bindkey "\E[4~" end-of-line
 
 setopt prompt_subst
 setopt auto_cd

@@ -5,6 +5,7 @@
 
 - link:
     ~/.zshenv: {}
+    ~/.tmux.conf: {}
     ~/.terraformrc: {}
     ~/.config/alacritty: {}
     ~/.config/nvim: {}
