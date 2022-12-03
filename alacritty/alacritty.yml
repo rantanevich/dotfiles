@@ -11,7 +11,7 @@ window:
   dynamic_title: false
 
 scrolling:
-  history: 10000
+  history: 2000
   multiplier: 5
 
 font:
