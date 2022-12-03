@@ -101,7 +101,6 @@ key_bindings:
 # tmux
 - { key: T,    mods: Command|Shift, chars: "\x01\x21" } # Break the current tmux pane out of the tmux window
 - { key: T,    mods: Command,       chars: "\x01\x63" } # Create a new tmux window
-- { key: K,    mods: Command,       chars: "\x01\x0b" } # Clear tmux scrollback buffer
 - { key: D,    mods: Command,       chars: "\x01\x25" } # Split vertically
 - { key: D,    mods: Command|Shift, chars: "\x01\x22" } # Split horizontally
 - { key: W,    mods: Command,       chars: "\x01\x78" } # Kill the current tmux pane
