@@ -22,6 +22,10 @@ kdbff() {
   command knife data bag from file "$@"
 }
 
+krff() {
+  command knife role from file "$@"
+}
+
 dotenv() {
   export $(grep -v '^#' $1 | xargs)
 }
