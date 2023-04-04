@@ -9,6 +9,7 @@ HOMEBREW=$(brew --prefix)
 
 path+=$HOME/.local/bin
 path+=$HOME/go/bin
+path+=$HOME/Library/Python/3.11/bin
 
 export PAGER=less
 export EDITOR=nvim
@@ -19,6 +20,7 @@ export LC_ALL=en_US.UTF-8
 export XDG_CONFIG_HOME=$HOME/.config
 export CLOUDSDK_PYTHON_SITEPACKAGES=true
 export USE_GKE_GCLOUD_AUTH_PLUGIN=true
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=true
 
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=1000000

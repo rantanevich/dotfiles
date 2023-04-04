@@ -1,7 +1,7 @@
 [include]
 path = ~/.config/git/personal.inc
 
-[includeIf "gitdir:~/src/github.com/productmadness/"]
+[includeIf "gitdir:~/src/github.com/raman-antanevich/"]
 path = ~/.config/git/productmadness.inc
 
 [pull]
