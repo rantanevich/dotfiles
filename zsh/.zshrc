@@ -53,6 +53,7 @@ setopt hist_find_no_dups
 [ -f $ZDOTDIR/functions.sh ] && source $ZDOTDIR/functions.sh
 
 complete -o nospace -C $HOMEBREW/bin/vault vault
+complete -o nospace -C /opt/homebrew/bin/nomad nomad
 
 source $HOMEBREW/opt/powerlevel10k/powerlevel10k.zsh-theme
 source $HOMEBREW/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
