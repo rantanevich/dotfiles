@@ -1,8 +1,8 @@
 [include]
 path = ~/.config/git/personal.inc
 
-[includeIf "gitdir:~/src/github.com/raman-antanevich/"]
-path = ~/.config/git/productmadness.inc
+[includeIf "gitdir:~/src/gitlab.inspectorio.com/"]
+path = ~/.config/git/inspectorio.inc
 
 [pull]
 ff = only
@@ -23,3 +23,4 @@ unstage = reset --soft HEAD^
 ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate
 ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%green\\ [%cn]" --decorate --numstat
 fl = log -u
+
