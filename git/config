@@ -20,7 +20,7 @@ del = branch -D
 undo = reset HEAD^ --mixed
 done = !git push origin HEAD
 unstage = reset --soft HEAD^
-ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate
-ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%green\\ [%cn]" --decorate --numstat
+ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate --abbrev=10
+ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%green\\ [%cn]" --decorate --numstat --abbrev=10
 fl = log -u
 
