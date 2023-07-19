@@ -21,5 +21,8 @@
   - ~/.local/bin
 
 - shell:
-  - git submodule update --init --recursive
-  - LOCALREPO=$HOME/.local/share/nvim/site/pack/packer/start/packer.nvim; git clone --depth 1 https://github.com/wbthomason/packer.nvim $LOCALREPO 2>/dev/null || git -C $LOCALREPO pull
+  - command: ./bootstrap.sh
+    stdin: true
+    stdout: true
+    stderr: true
+
