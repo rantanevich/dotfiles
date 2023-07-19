@@ -22,6 +22,10 @@ export CLOUDSDK_PYTHON_SITEPACKAGES=true
 export USE_GKE_GCLOUD_AUTH_PLUGIN=true
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=true
 
+if [[ -f $ZDOTDIR/.secrets ]]; then
+    export $(cat $ZDOTDIR/.secrets | xargs)
+fi
+
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000

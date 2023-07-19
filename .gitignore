@@ -2,4 +2,5 @@ nvim/plugin/packer_compiled.lua
 zsh/.zcompcache/
 zsh/.zsh_sessions/
 zsh/.zcompdump
+zsh/.secrets
 
