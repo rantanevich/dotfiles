@@ -60,7 +60,7 @@ complete -o nospace -C $HOMEBREW/bin/vault vault
 complete -o nospace -C /opt/homebrew/bin/nomad nomad
 
 source $HOMEBREW/opt/powerlevel10k/powerlevel10k.zsh-theme
-source $HOMEBREW/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+source $HOMEBREW/Caskroom/google-cloud-sdk/439.0.0/google-cloud-sdk/completion.zsh.inc
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
