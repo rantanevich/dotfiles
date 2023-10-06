@@ -15,8 +15,6 @@ BREW_FORMULAS=(
     kind
     kubernetes-cli
     neovim
-    podman
-    podman-compose
     romkatv/powerlevel10k/powerlevel10k
     pre-commit
     rsync
@@ -42,3 +40,7 @@ fi
 
 brew install ${BREW_FORMULAS[@]}
 brew install --cask ${BREW_CASKS[@]}
+
+# poetry
+curl -sSL https://install.python-poetry.org | sed 's/symlinks=False/symlinks=True/' | python3 -
+
