@@ -10,6 +10,7 @@ HOMEBREW=$(brew --prefix)
 path+=$HOME/.local/bin
 path+=$HOME/go/bin
 path+=$HOME/Library/Python/3.11/bin
+path+=$HOMEBREW/opt/openjdk/bin
 
 export PAGER=less
 export EDITOR=nvim
@@ -21,6 +22,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 export CLOUDSDK_PYTHON_SITEPACKAGES=true
 export USE_GKE_GCLOUD_AUTH_PLUGIN=true
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=true
+export KUBECONFIG=$HOME/.kube/config:$(find ~/.kube/config.d -type f -maxdepth 1 | tr '\n' ':')
 
 if [[ -f $ZDOTDIR/.secrets ]]; then
     export $(cat $ZDOTDIR/.secrets | xargs)
