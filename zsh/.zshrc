@@ -11,6 +11,9 @@ path+=$HOME/.local/bin
 path+=$HOME/go/bin
 path+=$HOME/Library/Python/3.11/bin
 path+=$HOMEBREW/opt/openjdk/bin
+path+=$HOMEBREW/opt/mysql-client/bin
+path+=$HOME/.tiup/bin
+
 
 export PAGER=less
 export EDITOR=nvim
