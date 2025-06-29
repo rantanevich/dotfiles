@@ -3,6 +3,7 @@ name = Raman Antanevich
 email = r.antanevich@gmail.com
 
 [core]
+excludesFile = ~/.config/git/exclude
 sshCommand = ssh -i ~/.ssh/id_ed25519
 
 [init]
