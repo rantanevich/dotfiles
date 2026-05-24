@@ -15,6 +15,6 @@ alias t='tmux attach || tmux new-session'
 alias gcil='gcloud compute instances list'
 alias gcs='gcloud compute ssh'
 
-alias proxyon='export http_proxy=http://proxy-1.pug.by:8080 && export https_proxy=$http_proxy'
+alias proxyon='export http_proxy=http://192.168.8.8:8080 && export https_proxy=$http_proxy'
 alias proxyoff='unset http_proxy https_proxy'
 
