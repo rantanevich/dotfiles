@@ -1,31 +1,17 @@
-keff() {
-  command knife environment from file "$@"
-}
-
-knff() {
-  command knife node from file "$@"
-}
-
-kcu() {
-  command knife cookbook upload "$@" --cookbook-path cookbooks
-}
-
-kdbe() {
-  command knife data bag edit "$@" --local-mode --secret-file=$HOME/.chef/encrypted_data_bag_secret
-}
-
-kdbs() {
-  command knife data bag show "$@" --local-mode --format=json
-}
-
-kdbff() {
-  command knife data bag from file "$@"
-}
-
-krff() {
-  command knife role from file "$@"
-}
-
 dotenv() {
   export $(grep -v '^#' $1 | xargs)
+}
+
+claude-personal() {
+  CLAUDE_CONFIG_DIR="$HOME/.config/claude/personal" \
+  http_proxy="http://192.168.8.8:8080" \
+  https_proxy="http://192.168.8.8:8080" \
+  command claude "$@"
+}
+
+claude-work() {
+  CLAUDE_CONFIG_DIR="$HOME/.config/claude/work" \
+  http_proxy="http://192.168.8.8:8080" \
+  https_proxy="http://192.168.8.8:8080" \
+  command claude "$@"
 }
